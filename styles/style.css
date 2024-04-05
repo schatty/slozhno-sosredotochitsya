@@ -5,13 +5,16 @@
   max-width: 1024px;
   margin: auto;
   font-family: "IBM Plex mono";
+  background-image: url("../images/cover-image-light.png");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .header {
   position: relative;
   display: grid;
   grid-template-rows: 100px 500px;
-  background-image: url("../images/cover-image-light.png");
+  /* background-image: url("../images/cover-image-light.png"); */
 }
 
 .header__theme-menu {
@@ -56,10 +59,11 @@
   font-size: 160px;
   font-weight: bold;
   color: #ffc2e6;
-  text-shadow: 2px 2px #fc0675;
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .header__content-text {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) 
   font-weight: bold;
   color: #353430;
   width: 500px;
@@ -107,6 +111,86 @@
   display: inline-block;
   box-shadow: 0px 0px 5px #fc0675;
   margin-left: 5px;
+}
+
+.content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.block_2rows {
+    /* background-color: green; */
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.block_2cols {
+    /* background-color: green; */
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.block_3cols {
+    /* background-color: green; */
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.content__text_subheader {
+    background-color: #ff8dcb;
+    margin-right: 10px;
+}
+
+.content__images {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 280px 325px 430px;
+}
+
+.content__pic_1 {
+    background-color: grey;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url("../images/sunset.png");
+    background-size: cover;
+}
+
+.content__pic_2 {
+    background-color: yellow;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url("../images/ice-cream.png");
+    background-size: cover;
+}
+
+.content__pic_3 {
+    background-color: red;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-image: url("../images/tape.png");
+    background-size: cover;
+}
+
+.content__pic_4 {
+    background-color: blue;
+    background-image: url("../images/books.png");
+    background-size: cover;
+}
+
+.content__pic_5 {
+    background-color: green;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-image: url("../images/street.png");
+    background-size: cover;
+}
+
+.footer {
+    position: relative;
+    height: 768px;
 }
 
 /* TODO: Implement adaptive */
