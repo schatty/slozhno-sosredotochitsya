@@ -8,6 +8,7 @@
 }
 
 .header {
+  position: relative;
   display: grid;
   grid-template-rows: 100px 500px;
   background-image: url("../images/cover-image-light.png");
@@ -65,6 +66,47 @@
   background-color: #ff8dcb;
   margin-left: auto;
   margin-right: 10px;
+}
+
+.header__pseudo_square_left {
+  background-color: transparent;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-top: 575px;
+  margin-left: 5px;
+  position: absolute;
+}
+
+.header__pseudo_square_right {
+  background-color: transparent;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-top: 5px;
+  margin-left: 999px;
+  position: absolute;
+}
+
+.header__pseudo_rec_label {
+  position: absolute;
+  margin-left: 94%;
+  margin-top: 10px;
+}
+
+.header__pseudo_rec_label::after {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: #fc0675;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0px 0px 5px #fc0675;
+  margin-left: 5px;
 }
 
 /* TODO: Implement adaptive */
