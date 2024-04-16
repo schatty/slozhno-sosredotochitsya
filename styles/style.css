@@ -26,6 +26,7 @@ h3 {
   justify-items: center;
   align-items: start;
   /* background-color: yellow; */
+  margin-top: 20px;
 }
 
 .header__theme-menu-list {
@@ -39,15 +40,35 @@ h3 {
 .header__theme-menu-item {
   float: left;
   display: block;
-  margin-left: 5px;
+  margin-left: 8px;
 }
 
 .header__theme-menu-button {
   background-color: transparent;
   border: 0px solid #353430;
   color: #353430;
-  padding-left: 10px;
+  padding-left: 12px;
   padding-right: 10px;
+  padding-top: 0px;
+  padding-bottom: 3px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.header__theme-menu-button_type_light {
+  margin-left: 0px;
+  margin-right: 5px;
+}
+
+.header__theme-menu-button_type_auto {
+  margin-left: 0px;
+  margin-right: 2px;
+  letter-spacing: 2px;
+}
+
+.header__theme-menu-button_type_dark {
+  margin-left: 3px;
+  margin-right: 9px;
 }
 
 .header__theme-menu-button_active {
@@ -67,7 +88,7 @@ h3 {
 }
 
 .header__content-text {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) 
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: bold;
   color: #353430;
   width: 500px;
