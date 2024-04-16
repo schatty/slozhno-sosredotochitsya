@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 h3 {
-    font-size: 12pt;
+    font-size: 18px;
 }
 
 .page {
@@ -10,6 +10,7 @@ h3 {
   margin: auto;
   font-family: "IBM Plex mono";
   background-image: url("../images/cover-image-light.png");
+  /* background-size: 1024px 768px; */
   background-size: cover;
   background-attachment: fixed;
 }
@@ -17,7 +18,7 @@ h3 {
 .header {
   position: relative;
   display: grid;
-  grid-template-rows: 100px 500px;
+  grid-template-rows: 200px 568px;
   /* background-image: url("../images/cover-image-light.png"); */
 }
 
@@ -76,25 +77,28 @@ h3 {
 }
 
 .header__content {
+  margin-top: 82px;
 }
 
 .header__content-title {
-  width: 100%;
-  height: 300px;
-  font-size: 160px;
+  /* width: 100%; */
+  font-size: 157px;
   font-weight: bold;
   color: #ffc2e6;
   text-shadow: 4px 4px 0 var(--accent-color);
+  /* background-color: green; */
 }
 
 .header__content-text {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: bold;
   color: #353430;
-  width: 500px;
+  width: 491px;
   background-color: #ff8dcb;
   margin-left: auto;
-  margin-right: 10px;
+  margin-right: 20px;
+  margin-top: 77px;
+  padding-right: 0px;
 }
 
 .header__pseudo_square_left {
@@ -102,10 +106,10 @@ h3 {
   border-left: 1px solid black;
   border-bottom: 1px solid black;
   display: inline-block;
-  height: 20px;
-  width: 20px;
-  margin-top: 575px;
-  margin-left: 5px;
+  height: 24px;
+  width: 24px;
+  margin-top: 722px;
+  margin-left: 20px;
   position: absolute;
 }
 
@@ -114,17 +118,17 @@ h3 {
   border-right: 1px solid black;
   border-top: 1px solid black;
   display: inline-block;
-  height: 20px;
-  width: 20px;
-  margin-top: 5px;
-  margin-left: 999px;
+  height: 24px;
+  width: 24px;
+  margin-top: 20px;
+  margin-left: 979px;
   position: absolute;
 }
 
 .header__pseudo_rec_label {
   position: absolute;
-  margin-left: 94%;
-  margin-top: 10px;
+  margin-left: 950px;
+  margin-top: 20px;
 }
 
 .header__pseudo_rec_label::after {
@@ -139,9 +143,11 @@ h3 {
 }
 
 .content {
-    width: 100%;
+    /* width: 100%; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 20px;
+    margin-top: 42px;
 }
 
 .block_2rows {
@@ -154,24 +160,71 @@ h3 {
     /* background-color: green; */
     grid-column-start: 2;
     grid-column-end: 4;
+    /* background-color: green; */
 }
 
 .block_3cols {
     /* background-color: green; */
     grid-column-start: 1;
     grid-column-end: 4;
+    /* margin-top: 62px; */
+    height: 68px;
+}
+
+.block_3cols_img {
+    /* background-color: green; */
+    grid-column-start: 1;
+    grid-column-end: 4;
+    /* margin-top: 62px; */
+    height: 64px;
+}
+
+.block_3cols_space {
+  /* height: 52px; */
+  height: 58px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: antiquewhite;
 }
 
 .content__text_subheader {
     background-color: #ff8dcb;
-    margin-right: 10px;
+    margin: 0px;
+    margin-right: 20px;
+    margin-bottom: 9px;
+    height: 24px;
+}
+
+.content__text_sub_subheader {
+    background-color: #ff8dcb;
+    margin: 0px;
+    margin-right: 20px;
+    margin-bottom: 9px;
+    height: 24px;
+    font-size: 18px;
+    margin-top: 19px;
+}
+
+.content__text {
+  padding-top: 0px;
+  font-size: 18px;
+  /* background-color: beige; */
+  /* margin-top: 0px; */
+  margin-right: 20px;
+  margin-bottom: 2px;
+}
+
+.content__section_3_columns {
+  margin-bottom: 50px;
 }
 
 .content__images {
     display: grid;
-    gap: 10px;
+    gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 280px 325px 430px;
+    grid-template-rows: 260px 314px 432px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .content__pic_1 {
@@ -185,6 +238,10 @@ h3 {
     background-color: yellow;
     grid-row-start: 1;
     grid-row-end: 3;
+}
+
+.pic__2 {
+    object-fit: cover;
 }
 
 .content__pic_3 {
@@ -201,6 +258,7 @@ h3 {
     background-color: green;
     grid-column-start: 2;
     grid-column-end: 4;
+    margin-top: 5px;
 }
 
 .content__image {
@@ -208,9 +266,42 @@ h3 {
     height: 100%;
 }
 
+.footer__title_wrapper {
+  padding-top: 280px;
+  /* background-color: gray; */
+  /* position: relative; */
+}
+
+/* .footer__pseudo_square_left {
+  background-color: transparent;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  margin-top: 722px;
+  margin-left: 20px;
+  position: absolute;
+}
+
+.footer__pseudo_square_right {
+  background-color: transparent;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  margin-top: 20px;
+  margin-left: 979px;
+  position: absolute;
+} */
+
 .footer {
+  background-color: yellow;
     position: relative;
     height: 768px;
+    margin-top: 61px;
+    /* background-color: gray; */
 }
 
 /* TODO: Implement adaptive */
