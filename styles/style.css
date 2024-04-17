@@ -4,6 +4,12 @@ h3 {
     font-size: 18px;
 }
 
+a {
+  color: var(--text-color);
+  text-shadow: 2px 2px 0px rgba(255,0,112, .8);
+  text-decoration: none;
+}
+
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   max-width: 1024px;
@@ -118,7 +124,9 @@ h3 {
   height: 24px;
   width: 24px;
   margin-top: 20px;
-  margin-left: 979px;
+  display: block;
+  right: 0;
+  margin-right: 20px;
   position: absolute;
 }
 
@@ -126,10 +134,10 @@ h3 {
   font-size: 18px;
   color: var(--border-color);
   position: absolute;
-  margin-left: 944px;
   margin-top: 21px;
   display: none;
-  /* display: block; */
+  right: 0;
+  margin-right: 28px;
 }
 
 .header__pseudo_rec_label::after {
@@ -214,6 +222,7 @@ h3 {
   margin-right: 20px;
   margin-bottom: 2px;
   color: var(--text-color);
+
 }
 
 .content__section_3_columns {
