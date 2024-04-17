@@ -1,3 +1,11 @@
 :root {
-  --accent-color: #ff0070;
+  --accent-color: #fc0c78;
+  --title-color: #ffc2e6;
+  --title-subheader-bg-color: #ff8dcb;
+  --title-subheader-color: #000;
+  --title-subheader-nobg-color: #000;
+  --border-color: #000; 
+  --bg-image: url("../images/cover-image-light.png");
+  --header-text-color: #000;
+  --text-color: #000;
 }

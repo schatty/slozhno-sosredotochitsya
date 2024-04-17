@@ -9,4 +9,21 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --accent-color: #fc0c78;
+  --title-color: #DB00FF;
+  --title-subheader-bg-color: #FF0070;
+  --title-subheader-color: #000;
+  --title-subheader-nobg-color: #FF0070;
+  --border-color: #FF0070; 
+  --bg-image: url("../images/cover-image-dark.png");
+  --text-color: #F1B2CE;
+
+}
+
+.page.theme_dark .header__pseudo_rec_label {
+  display: block;
+}
+
+.page.theme_dark .header__pseudo_rec_label::after {
+  display: inline-block;
 }
