@@ -11,7 +11,6 @@ a {
 }
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   max-width: 1024px;
   margin: auto;
   font-family: "IBM Plex mono";
@@ -21,17 +20,20 @@ a {
 }
 
 .header {
-  position: relative;
   display: grid;
-  grid-template-rows: 200px 568px;
+  /* grid-template-rows: 500px 568px; */
+  grid-template-rows: 445px 569px;
+  position: relative;
 }
 
 .header__theme-menu {
   display: grid;
-  justify-items: center;
-  align-items: start;
-  /* background-color: yellow; */
-  margin-top: 20px;
+  background-color: green;
+  padding-top: 70px;
+  padding-right: 11px;
+  
+  justify-items: end;
+  align-items: center;
 }
 
 .header__theme-menu-list {
@@ -43,16 +45,16 @@ a {
 }
 
 .header__theme-menu-item {
-  float: left;
   display: block;
   margin-left: 8px;
+  margin-bottom: 12px;
 }
 
 .header__theme-menu-button {
   background-color: transparent;
   border: 0px solid var(--border-color);
   color: var(--border-color);
-  padding-left: 12px;
+  padding-left: 14px;
   padding-right: 10px;
   padding-top: 0px;
   padding-bottom: 3px;
@@ -81,26 +83,26 @@ a {
 }
 
 .header__content {
-  margin-top: 82px;
+  margin-top: 0px;
 }
 
+
 .header__content-title {
-  font-size: 157px;
+  font-size: 120px;
   font-weight: bold;
   color: var(--title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
-  /* background-color: green; */
 }
 
 .header__content-text {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: bold;
   /* color: var(--text-color); */
-  width: 491px;
+  width: 364px;
   background-color: var(--title-subheader-bg-color);
   margin-left: auto;
   margin-right: 20px;
-  margin-top: 77px;
+  margin-top: 132px;
   padding-right: 0px;
 }
 
@@ -111,7 +113,7 @@ a {
   display: inline-block;
   height: 24px;
   width: 24px;
-  margin-top: 722px;
+  bottom: 0;
   margin-left: 20px;
   position: absolute;
 }
@@ -123,7 +125,7 @@ a {
   display: inline-block;
   height: 24px;
   width: 24px;
-  margin-top: 20px;
+  margin-top: 30px; 
   display: block;
   right: 0;
   margin-right: 20px;
@@ -134,7 +136,7 @@ a {
   font-size: 18px;
   color: var(--border-color);
   position: absolute;
-  margin-top: 21px;
+  margin-top: 31px;
   display: none;
   right: 0;
   margin-right: 28px;
@@ -144,7 +146,7 @@ a {
   content: "";
   height: 10px;
   width: 10px;
-  background-color: #fc0675;
+  background-color: var(--accent-color);
   border-radius: 50%;
   display: inline-block;
   box-shadow: 0px 0px 5px var(--title-color);
@@ -155,25 +157,32 @@ a {
 
 .content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
     margin-left: 20px;
     margin-top: 42px;
 }
 
+.blank_space_interval_1 {
+  height: 20px;
+}
+
 .block_2rows {
-    /* background-color: green; */
+    padding-right: 20px;
     grid-row-start: 1;
     grid-row-end: 2;
 }
 
 .block_2cols {
     /* background-color: green; */
+    padding-left: 7px;
     grid-column-start: 2;
     grid-column-end: 4;
 }
 
 .block_3cols {
     /* background-color: green; */
+    padding-right: 600px;
+    margin-bottom: 21px;
     grid-column-start: 1;
     grid-column-end: 4;
     height: 68px;
@@ -285,4 +294,62 @@ a {
     /* background-color: gray; */
 }
 
-/* TODO: Implement adaptive */
+
+@media (768px < width) {
+  .header {
+    grid-template-rows: 200px 568px;
+  }
+
+  .header__theme-menu {
+    justify-items: center;
+    align-items: start;
+    padding-top: 20px;
+  }
+
+  .header__theme-menu-item {
+    float: left;
+  }
+
+.header__pseudo_rec_label {
+  margin-top: 21px;
+}
+
+.header__content-title {
+  font-size: 157px;
+} 
+
+.header__content-text {
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+} 
+
+.header__content {
+  margin-top: 82px;
+}
+
+.header__content-text {
+  width: 491px;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 77px;
+  padding-right: 0px;
+}
+
+.blank_space_interval_1 {
+  height: 0px;
+}
+
+.block_2rows {
+    padding-right: 0px;
+}
+
+.block_2cols {
+    padding-left: 0px;
+
+}
+
+.block_3cols {
+    padding-right: 0px;
+    margin-bottom: 0px;
+}
+
+}
