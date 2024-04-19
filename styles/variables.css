@@ -5,6 +5,7 @@
   --title-subheader-color: #000;
   --title-subheader-nobg-color: #000;
   --border-color: #000; 
+  --border-color-alpha40: rgba(0, 0, 0, 0.4); 
   --bg-image: url("../images/cover-image-light.png");
   --header-text-color: #000;
   --text-color: #000;
