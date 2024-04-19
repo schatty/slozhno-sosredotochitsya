@@ -145,7 +145,6 @@ a:hover {
   background-color: transparent;
   border-right: 1px solid var(--border-color);
   border-top: 1px solid var(--border-color);
-  display: inline-block;
   height: 24px;
   width: 24px;
   display: block;
@@ -179,7 +178,6 @@ a:hover {
   width: 10px;
   background-color: var(--accent-color);
   border-radius: 50%;
-  display: inline-block;
   box-shadow: 0px 0px 5px var(--title-color);
   margin-left: 9px;
   margin-bottom: 1px;
@@ -314,6 +312,7 @@ a:hover {
 }
 
 .footer__content-title {
+  text-align: center;
   text-shadow: 2px 2px 0 var(--accent-color);
   padding-right: 10px;
 }
