@@ -1,7 +1,10 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 h3 {
-    font-size: 18px;
+    font-size: 18px; 
+    margin-top: 17px;
+    margin-bottom: 9px;
+    /* padding: 0px; */
 }
 
 a {
@@ -11,7 +14,7 @@ a {
 }
 
 .page {
-  max-width: 768px;
+  max-width: 375px;
   margin: auto;
   font-family: "IBM Plex mono";
   background-image: var(--bg-image);
@@ -21,16 +24,14 @@ a {
 
 .header {
   display: grid;
-  /* grid-template-rows: 500px 568px; */
-  grid-template-rows: 445px 569px;
+  grid-template-rows: 195px 463px;
   position: relative;
 }
 
 .header__theme-menu {
   display: grid;
-  /* background-color: green; */
   padding-top: 70px;
-  padding-right: 11px;
+  padding-right: 0px;
   
   justify-items: end;
   align-items: center;
@@ -86,9 +87,13 @@ a {
   margin-top: 0px;
 }
 
-
 .header__content-title {
-  font-size: 120px;
+  margin-top: 43px;;
+  margin-left: 10px;
+
+
+  font-size: 115px;
+  line-height: 0.84;
   font-weight: bold;
   color: var(--title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -97,11 +102,11 @@ a {
 .header__content-text {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: bold;
-  width: 364px;
+  width: 355px;
   background-color: var(--title-subheader-bg-color);
   margin-left: auto;
-  margin-right: 20px;
-  margin-top: 132px;
+  margin-right: 10px;
+  margin-top: 55px;
   padding-right: 0px;
 }
 
@@ -113,7 +118,6 @@ a {
   height: 24px;
   width: 24px;
   bottom: 0;
-  margin-left: 20px;
   position: absolute;
 }
 
@@ -124,7 +128,6 @@ a {
   display: inline-block;
   height: 24px;
   width: 24px;
-  margin-top: 30px; 
   display: block;
   right: 0;
   margin-right: 20px;
@@ -132,20 +135,22 @@ a {
 }
 
 .header__pseudo_square_left {
+  margin-left: 10px;
 }
 
 .header__pseudo_square_right {
-  margin-top: 30px; 
+  margin-top: 10px; 
+  margin-right: 10px;
 }
 
 .header__pseudo_rec_label {
   font-size: 18px;
   color: var(--border-color);
   position: absolute;
-  margin-top: 31px;
+  margin-top: 11px;
   display: none;
   right: 0;
-  margin-right: 28px;
+  margin-right: 18px;
 }
 
 .header__pseudo_rec_label::after {
@@ -164,13 +169,12 @@ a {
 .content {
     /* display: grid; */
     /* grid-template-columns: 1fr 1fr 1fr; */
-    margin-left: 20px;
-    margin-top: 42px;
+    margin-left: 10px;
 }
 
 .content__section_1 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  /* display: grid;
+  grid-template-columns: 1fr 2fr; */
 }
 
 /* .content__section_2 {
@@ -178,16 +182,16 @@ a {
 } */
 
 .content__section_3 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  /* display: grid;
+  grid-template-columns: 1fr 2fr; */
 }
 
 .content__section_2_header {
-  width: 200px;
+    width: 300px;
 }
 
 .block_section_1 {
-  padding-left: 7px;
+  padding-left: 0px;
 }
 
 .block_section_2 {
@@ -195,38 +199,33 @@ a {
 }
 
 .block_section_3 {
-  padding-left: 7px;
+  padding-left: 0px;
 }
 
 .blank_space_interval_1 {
-  height: 20px;
-  /* background-color: goldenrod; */
+  height: 32px;
 }
 
 .blank_space_interval_2 {
-  /* background-color: goldenrod; */
-  height: 58px;
+  height: 31px;
   grid-column-start: 1;
   grid-column-end: 4;
 }
 
 .blank_space_interval_3 {
-  /* background-color: goldenrod; */
-  height: 43px;
+  height: 12px;
   grid-column-start: 1;
   grid-column-end: 4;
 }
 
 .blank_space_interval_4 {
-  /* background-color: goldenrod; */
-  height: 60px;
+  height: 28px;
   grid-column-start: 1;
   grid-column-end: 4;
 }
 
 .blank_space_interval_5 {
-  /* background-color: goldenrod; */
-  height: 50px;
+  height: 38px;
   grid-column-start: 1;
   grid-column-end: 4;
 }
@@ -238,64 +237,40 @@ a {
     grid-row-end: 3;
 }
 
-.block_2cols {
-    /* background-color: green; */
-    padding-left: 7px;
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-
-.block_3cols {
-    /* background-color: green; */
-    /* padding-right: 600px; */
-    margin-bottom: 21px;
-    width: 760px;
-    /* grid-column-start: 1;
-    grid-column-end: 4; */
-    height: 68px;
-}
-
 .block_3cols_img {
     /* background-color: green; */
     grid-column-start: 1;
     grid-column-end: 4;
-    height: 64px;
-}
-
-.block_3cols_space {
-  height: 58px;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  /* background-color: antiquewhite; */
+    /* height: 64px; */
 }
 
 .content__text_subheader {
     background-color: var(--title-subheader-bg-color);
     margin: 0px;
-    margin-right: 20px;
-    margin-bottom: 9px;
-    height: 24px;
+    margin-right: 10px;
+    /* margin-bottom: 9px; */
+    /* height: 24px; */
 }
 
 .content__subheader_no_bg {
   color: var(--title-subheader-nobg-color);
+  margin-bottom: 20px;
 }
 
 .content__text_sub_subheader {
     background-color: var(--title-subheader-bg-color);
-    margin: 0px;
-    margin-right: 20px;
-    margin-bottom: 9px;
+    margin-right: 10px;
+    /* margin-bottom: 9px; */
     height: 24px;
     font-size: 18px;
     margin-top: 19px;
+    margin-bottom: 10px;
 }
 
 .content__text {
-  padding-top: 0px;
   font-size: 18px;
   /* background-color: beige; */
-  margin-right: 20px;
+  margin-right: 10px;
   margin-bottom: 2px;
   color: var(--text-color);
 
@@ -306,11 +281,10 @@ a {
 }
 
 .content__images {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 190px 230px 320px;
-    margin-right: 20px;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 190px 230px 320px; */
+    margin-right: 10px;
 }
 
 .content__pic_1 {
@@ -342,36 +316,164 @@ a {
 .content__image {
     width: 100%;
     height: 100%;
+    margin-bottom: 6px;
 }
 
 .footer__title_wrapper {
-  /* padding-top: 282px; */
-  padding-top: 58%;
-  /* background-color: gray; */
+  padding-top: 62%;
 }
 
 .footer__content-title {
   text-shadow: 2px 2px 0 var(--accent-color);
+  padding-right: 10px;
 }
 
 .footer {
-  /* background-color: bisque; */
-  /* display: flex; */
-  /* grid-auto-rows: max-content; */
   position: relative;
-  height: 1024px;
-  /* margin-top: 61px; */
-  /* background-color: gray; */
-
-  /* justify-content: center;
-  align-items: center; */
+  height: 668px;
 }
 
 .footer__pseudo_square_left {
-  margin-bottom: 11px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.footer__pseudo_square_right {
+  margin-right: 10px;
 }
 
 
+/* Tablet version */
+@media (375px < width) {
+  .page {
+    max-width: 768px;
+  }
+
+  .header__theme-menu {
+    padding-right: 11px;
+  }
+
+  .content {
+      margin-left: 20px;
+  }
+
+  .header__pseudo_rec_label {
+    margin-top: 31px;
+    margin-right: 28px;
+  }
+
+  .header {
+    grid-template-rows: 445px 569px;
+  }
+
+  .header__content-title {
+    font-size: 120px;
+    margin-top: 0px;;
+    margin-left: 0px;
+  }
+
+  .header__content-text {
+    width: 364px;
+    margin-right: 20px;
+    margin-top: 132px;
+  }
+  
+  .header__pseudo_square_left {
+    margin-left: 20px;
+  }
+
+  .blank_space_interval_2 {
+    background-color: bisque;
+    height: 10px;
+  }
+
+  .blank_space_interval_2 {
+    height: 58px;
+  }
+
+  .blank_space_interval_3 {
+    height: 43px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .blank_space_interval_4 {
+    height: 60px;
+  }
+
+  .blank_space_interval_5 {
+    height: 50px;
+  }
+
+  .block_section_1 {
+    padding-left: 7px;
+  }
+
+  .content__text_subheader {
+      margin-right: 20px;
+  }
+
+  .content__text_sub_subheader {
+      margin-right: 20px;
+      margin-bottom: 50px;
+  }
+
+  .content__text {
+    margin-right: 20px;
+
+  }
+
+  .content__section_2_header {
+    width: 200px;
+  }
+
+  .content__section_3 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .block_section_3 {
+    padding-left: 7px;
+  }
+
+  .content__images {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 190px 230px 320px;
+      margin-right: 5px;
+  }
+
+  .block_3cols_img {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      height: 64px;
+  }
+
+  .content__image {
+      margin-bottom: 0px;
+  }
+
+  .footer {
+    height: 1024px;
+  }
+  
+  .footer__pseudo_square_left {
+    margin-bottom: 11px;
+  }
+
+  .footer__title_wrapper {
+    padding-top: 58%;
+  }
+
+  .footer__content-title {
+    padding-right: 10px;
+  }
+
+}
+
+
+/* Desktop version */
 @media (768px < width) {
   .page {
     max-width: 1024px;
