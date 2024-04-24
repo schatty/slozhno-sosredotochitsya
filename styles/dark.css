@@ -31,3 +31,21 @@
 .page.theme_dark .header__pseudo_rec_label::after {
   display: inline-block;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: #fc0c78;
+    --link-shadow: #ff0070;
+    --link-hover-underline: #f1b2ce;
+    --button-hover-border: rgba(50, 49, 45, 0.4);
+    --button-focus-underline: #353430;
+    --title-color: #db00ff;
+    --title-subheader-bg-color: #ff0070;
+    --title-subheader-color: #000;
+    --title-subheader-nobg-color: #ff0070;
+    --border-color: #ff0070;
+    --border-color-alpha40: rgba(50, 49, 45, 0.4);
+    --bg-image: url("../images/cover-image-dark.png");
+    --text-color: #f1b2ce;
+  }
+}

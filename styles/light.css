@@ -9,8 +9,38 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --accent-color: #fc0c78;
+  --link-shadow: #ff8dcb;
+  --link-hover-underline: #353430;
+  --button-hover-border: rgba(255, 0, 112, 0.4);
+  --button-focus-underline: #ff0070;
+  --title-color: #ffc2e6;
+  --title-subheader-bg-color: #ff8dcb;
+  --title-subheader-color: #000028;
+  --title-subheader-nobg-color: #000;
+  --border-color: #000;
+  --border-color-alpha40: rgba(255, 0, 112, 0.4);
+  --bg-image: url("../images/cover-image-light.png");
+  --header-text-color: #000;
+  --text-color: #000;
 }
 
-:root {
-  --accent-color: #fc0c78;
-} 
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #fc0c78;
+    --link-shadow: #ff8dcb;
+    --link-hover-underline: #353430;
+    --button-hover-border: rgba(255, 0, 112, 0.4);
+    --button-focus-underline: #ff0070;
+    --title-color: #ffc2e6;
+    --title-subheader-bg-color: #ff8dcb;
+    --title-subheader-color: #000028;
+    --title-subheader-nobg-color: #000;
+    --border-color: #000;
+    --border-color-alpha40: rgba(255, 0, 112, 0.4);
+    --bg-image: url("../images/cover-image-light.png");
+    --header-text-color: #000;
+    --text-color: #000;
+  }
+}
+
