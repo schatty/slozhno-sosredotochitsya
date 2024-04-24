@@ -399,11 +399,6 @@
     padding-top: 60px;
   }
 
-  .content__section_what {
-    background-color: green;
-    padding-top: 42px;
-  }
-
   .content__text {
     margin-bottom: 2px;
   }
@@ -435,6 +430,8 @@
   }
 
   .content__section_what {
+    background-color: green;
+    padding-top: 42px;
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
@@ -497,6 +494,7 @@
 
   .header__theme-menu-item {
     float: left;
+    margin-left: 15px;
   }
 
   .header__pseudo_rec_label {
@@ -505,17 +503,13 @@
 
   .header__content-title {
     font-size: 157px;
-    margin-top: 36px;
+    margin-top: 2%;
   }
 
-  .header__content-text {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    max-width: 491px;
-    widht: 100%;
-    margin-left: auto;
-    margin-right: 20px;
-    margin-top: 112px;
-    padding-right: 0px;
+  .header__text-paragrpaph {
+    margin-right: -33%;
+    margin-top: -15%;
+    min-width: 490px;
   }
 
   .content__section_cause_header {
@@ -526,17 +520,29 @@
   }
 
   .content__subheader_no_bg {
-    width: 300px;
+    width: 310px;
+    padding-bottom: 0px;
+    padding-top: 19px;
+    margin: 0;
+    margin-bottom: 0;
   }
 
   .content__section_cause {
+    padding-top: 58px;
+  }
+
+  .content__section_cause_content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 00px;
+    gap: 20px;
+  }
+
+  .block_section_how {
+    padding-left: 7px;
   }
 
   .block_section_why {
-    padding-left: 0px;
+    padding-left: 7px;
   }
 
   .block_section_what {
@@ -549,6 +555,13 @@
 
   .block_2cols {
     padding-left: 0px;
+  }
+
+  .content__section_what {
+    background-color: green;
+    padding-top: 42px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
   }
 
   .block_3cols {
