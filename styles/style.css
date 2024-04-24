@@ -88,15 +88,6 @@
   border: 1px solid var(--button-hover-border);
 }
 
-.header__theme-menu-button_type_light {
-}
-
-.header__theme-menu-button_type_auto {
-}
-
-.header__theme-menu-button_type_dark {
-}
-
 .header__theme-menu-button_active {
   border: 1px solid var(--border-color);
   pointer-events: none;
@@ -106,7 +97,6 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  /* width: 100%; */
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -120,21 +110,14 @@
   color: var(--title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   margin-bottom: 0%;
-  margin-top: 2.5%;
-}
-
-.header__content-text {
+  margin-top: 2%;
 }
 
 .header__text-paragrpaph {
   font-size: 18px;
   font-weight: bold;
   background-color: var(--title-subheader-bg-color);
-  /* margin: 0;
-  padding: 0; */
-  /* padding-left: 10px; */
   margin-top: -11.5%;
-  /* margin-left: 10px; */
 }
 
 .decorated-zone::after {
@@ -198,7 +181,7 @@
 }
 
 .content__section_cause {
-  padding-top: 11px;
+  padding-top: 12px;
 }
 
 .content__section_what {
@@ -206,8 +189,8 @@
 }
 
 .content__section_visual {
-  padding-top: 12px;
-  padding-bottom: 30px;
+  padding-top: 11px;
+  padding-bottom: 28px;
 }
 
 .content__section_cause_header {
@@ -322,10 +305,6 @@
 
 /* Tablet version */
 
-/* * { */
-/*   border: 1px solid red; */
-/* } */
-
 @media (375px < width) {
   .page {
     max-width: 768px;
@@ -363,8 +342,6 @@
     display: grid;
     align-items: center;
     justify-content: start;
-    /* padding-left: 0px; */
-    /* padding-right: 20px; */
     margin: 0;
     padding: 0;
   }
@@ -372,17 +349,12 @@
   .header__content-title {
     font-size: 120px;
     margin-top: 1%;
-    /* width: 100vw; */
   }
 
   .header__text-paragrpaph {
     color: var(--title-subheader-color);
-    /* margin-left: auto; */
     max-width: 364px;
-    /* width: 100%; */
     justify-self: end;
-    /* align-self: start; */
-    /* margin-left: auto; */
     margin-top: -27%;
     margin-right: -30%;
   }
@@ -413,17 +385,8 @@
     padding-top: 60px;
   }
 
-  .content__text_subheader {
-    /* margin-right: 20px; */
-  }
-
   .content__text_sub_subheader {
-    /* margin-right: 20px; */
     margin-bottom: 10px;
-  }
-
-  .content__text {
-    /* margin-right: 20px; */
   }
 
   .content__section_cause_header {
@@ -550,19 +513,10 @@
     padding-right: 0px;
   }
 
-  .block_2cols {
-    padding-left: 0px;
-  }
-
   .content__section_what {
     padding-top: 40px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-  }
-
-  .block_3cols {
-    padding-right: 0px;
-    margin-bottom: 0px;
   }
 
   .content__images {
