@@ -106,7 +106,9 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  /* width: 100%; */
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .header__content-title {
@@ -117,22 +119,22 @@
   font-weight: bold;
   color: var(--title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
-  margin-bottom: 15%;
-  margin-top: -3%;
+  margin-bottom: 0%;
+  margin-top: 2.5%;
 }
 
 .header__content-text {
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .header__text-paragrpaph {
-  padding: 0;
-  margin: 0;
-  background-color: green;
   font-size: 18px;
   font-weight: bold;
   background-color: var(--title-subheader-bg-color);
+  /* margin: 0;
+  padding: 0; */
+  /* padding-left: 10px; */
+  margin-top: -11.5%;
+  /* margin-left: 10px; */
 }
 
 .decorated-zone::after {
@@ -187,6 +189,7 @@
 }
 
 .content {
+  background-color: green;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -327,8 +330,18 @@
     max-width: 768px;
   }
 
+  .decorated-zone::after {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .decorated-zone::before {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
   .header__theme-menu {
-    padding-right: 11px;
+    padding-right: 10px;
   }
 
   .content {
@@ -341,31 +354,35 @@
   }
 
   .header {
-    grid-template-rows: 302px 596px;
+    grid-template-rows: 302px 722px;
   }
 
   .header__content {
     background-color: gray;
+    display: grid;
+    align-items: center;
+    justify-content: start;
+    /* padding-left: 0px; */
+    /* padding-right: 20px; */
+    margin: 0;
+    padding: 0;
   }
 
   .header__content-title {
     font-size: 120px;
-    margin-top: 35px;
-    margin-left: 0px;
-  }
-
-  .header__content-text {
-    background-color: green;
-    /* padding-right: 20px; */
-    /* margin-top: 160px; */
-    /* min-width: 768px; */
-    /* width: 100%; */
+    margin-top: 1%;
+    /* width: 100vw; */
   }
 
   .header__text-paragrpaph {
-    margin-left: auto;
+    /* margin-left: auto; */
     max-width: 364px;
-    width: 100%;
+    /* width: 100%; */
+    justify-self: end;
+    /* align-self: start; */
+    /* margin-left: auto; */
+    /* margin-top: -30%; */
+    /* margin-right: -30%; */
   }
 
   .content__section_why {
