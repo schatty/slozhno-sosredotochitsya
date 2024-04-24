@@ -315,128 +315,128 @@
 
 @media (375px < width) {
   .page {
-      max-width: 768px;
+    max-width: 768px;
   }
 
   .decorated-zone::after {
-      margin-left: 20px;
-      margin-bottom: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
   }
 
   .decorated-zone::before {
-      margin-top: 20px;
-      margin-right: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
   }
 
   .header__theme-menu {
-      padding-right: 10px;
+    padding-right: 10px;
   }
 
   .content {
-      padding-left: 20px;
-      padding-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .header__pseudo_rec_label {
-      margin-top: 21px;
-      margin-right: 29px;
+    margin-top: 21px;
+    margin-right: 29px;
   }
 
   .header {
-      grid-template-rows: 302px 722px;
+    grid-template-rows: 302px 722px;
   }
 
   .header__content {
-      display: grid;
-      align-items: center;
-      justify-content: start;
-      margin: 0;
-      padding: 0;
+    display: grid;
+    align-items: center;
+    justify-content: start;
+    margin: 0;
+    padding: 0;
   }
 
   .header__content-title {
-      font-size: 120px;
-      margin-top: 1.5%;
+    font-size: 120px;
+    margin-top: 1.5%;
   }
 
   .header__text-paragrpaph {
-      color: var(--title-subheader-color);
-      max-width: 364px;
-      justify-self: end;
-      margin-top: -27.5%;
-      margin-right: -30%;
+    color: var(--title-subheader-color);
+    max-width: 364px;
+    justify-self: end;
+    margin-top: -27.5%;
+    margin-right: -30%;
   }
 
   .content__subheader_cause {
-      width: 200px;
-      margin-bottom: 4px;
+    max-width: 200px;
+    width: 100%;
+    margin-bottom: 4px;
   }
 
   .content__section_why {
-      padding-top: 42px;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
+    padding-top: 42px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
   }
 
   .content__section_cause {
-      padding-top: 60px;
+    padding-top: 60px;
   }
 
   .content__text {
-      margin-bottom: 2px;
+    margin-bottom: 2px;
   }
 
   .content__section_visual {
-      padding-top: 60px;
+    padding-top: 60px;
   }
 
   .content__text_sub_subheader {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   .content__section_cause_header {
-      max-width: 200px;
-      width: 100%;
+    max-width: 200px;
   }
 
   .content__section_what {
-      padding-top: 42px;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
+    padding-top: 42px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
   }
 
   .block_section_why {
-      padding-left: 13px;
+    padding-left: 13px;
   }
 
   .block_section_what {
-      padding-left: 7px;
+    padding-left: 7px;
   }
 
   .block_section_how {
-      padding-left: 13px;
+    padding-left: 13px;
   }
 
   .content__images {
-      display: grid;
-      gap: 20px;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 192px 230px 318px;
-      padding-top: 10px;
-      padding-bottom: 30px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 192px 230px 318px;
+    padding-top: 10px;
+    padding-bottom: 30px;
   }
 
   .block_3cols_img {
-      grid-column-start: 1;
-      grid-column-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
   }
 
   .content__image {
-      margin-bottom: 0px;
+    margin-bottom: 0px;
   }
 
   .footer__content-title {
-      padding-right: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -444,103 +444,99 @@
 
 @media (768px < width) {
   .page {
-      max-width: 1024px;
+    max-width: 1024px;
   }
 
   .header {
-      grid-template-rows: 200px 568px;
+    grid-template-rows: 200px 568px;
   }
 
   .header__theme-menu {
-      justify-items: center;
-      align-items: start;
-      padding-top: 20px;
+    justify-items: center;
+    align-items: start;
+    padding-top: 20px;
   }
 
   .header__theme-menu-item {
-      float: left;
-      margin-left: 15px;
+    float: left;
+    margin-left: 15px;
   }
 
   .header__pseudo_rec_label {
-      margin-top: 21px;
+    margin-top: 21px;
   }
 
   .header__content-title {
-      font-size: 157px;
-      margin-top: 2%;
+    font-size: 157px;
+    margin-top: 2%;
   }
 
   .header__text-paragrpaph {
-      margin-right: -33%;
-      margin-top: -15%;
-      min-width: 490px;
+    margin-right: -33%;
+    margin-top: -15%;
+    min-width: 490px;
   }
 
   .content__section_cause_header {
-      max-width: 400px;
-      width: 100%;
-      grid-column-start: 1;
-      grid-column-end: 4;
+    max-width: 400px;
+    grid-column-start: 1;
+    grid-column-end: 4;
   }
 
   .content__subheader_no_bg {
-      width: 310px;
-      padding-bottom: 2px;
-      padding-top: 19px;
-      margin: 0;
-      margin-bottom: 0;
+    max-width: 310px;
+    width: 100%;
+    padding-bottom: 2px;
+    padding-top: 19px;
+    margin: 0;
+    margin-bottom: 0;
   }
 
   .content__subheader_cause {
-      width: 310px;
+    max-width: 310px;
   }
 
   .content__section_cause {
-      padding-top: 58px;
+    padding-top: 58px;
   }
 
   .content__section_cause_content {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
   }
 
   .block_section_how {
-      padding-left: 7px;
+    padding-left: 7px;
   }
 
   .block_section_why {
-      padding-left: 7px;
+    padding-left: 7px;
   }
 
   .block_section_what {
-      padding-left: 0px;
+    padding-left: 0px;
   }
 
   .block_2rows {
-      padding-right: 0px;
+    padding-right: 0px;
   }
 
   .content__section_what {
-      padding-top: 40px;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
   }
 
   .content__images {
-      grid-template-rows: 260px 315px 433px;
+    grid-template-rows: 260px 315px 433px;
   }
 
   .content__pic_street {
-      margin-top: 5px;
-  }
-
-  .footer {
-      height: 768px;
+    margin-top: 5px;
   }
 
   .footer__content-title {
-      margin-top: 1%;
+    margin-top: 1%;
   }
 }
